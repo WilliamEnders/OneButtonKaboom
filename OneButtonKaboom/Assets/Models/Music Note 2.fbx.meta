@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 897ec5010d6ae4817bfdfe184eda5012
-timeCreated: 1445880888
+guid: de650d5f7252440a3b721209c8457a6f
+timeCreated: 1445983294
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: pasted__pCylinder3
+    100004: pCylinder3
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube4
-    9500000: //RootNode
+    400002: pasted__pCylinder3
+    400004: pCylinder3
+    2300000: pasted__pCylinder3
+    2300002: pCylinder3
+    3300000: pasted__pCylinder3
+    3300002: pCylinder3
+    4300000: pCylinder3
+    4300002: pasted__pCylinder3
   materials:
     importMaterials: 1
     materialName: 0
@@ -67,10 +73,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
-  humanoidOversampling: 1
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
