@@ -10,7 +10,7 @@ public class planetSizer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		radius = Random.Range (5,10);
+		radius = Random.Range (5,7);
 	
 	}
 
