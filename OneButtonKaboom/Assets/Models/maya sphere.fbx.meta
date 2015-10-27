@@ -1,32 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: cfc3f3cf6649e4a1e85a009aa200856b
-timeCreated: 1445984449
-=======
-guid: ab704838af8a34ba6a4c23c628a2cbc4
-timeCreated: 1445983764
->>>>>>> bba389dd9e661252c5bfcd3cfada369de58682bb
+guid: 3134324585be54322a5b8dc09dfe51f6
+timeCreated: 1445984604
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCylinder51
-    100004: pCylinder52
-    100006: pCylinder53
     400000: //RootNode
-    400002: pCylinder51
-    400004: pCylinder52
-    400006: pCylinder53
-    2300000: pCylinder51
-    2300002: pCylinder52
-    2300004: pCylinder53
-    3300000: pCylinder51
-    3300002: pCylinder52
-    3300004: pCylinder53
-    4300000: pCylinder51
-    4300002: pCylinder52
-    4300004: pCylinder53
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pSphere16
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -84,15 +67,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-<<<<<<< HEAD
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
-=======
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
->>>>>>> bba389dd9e661252c5bfcd3cfada369de58682bb
   additionalBone: 0
   userData: 
   assetBundleName: 
