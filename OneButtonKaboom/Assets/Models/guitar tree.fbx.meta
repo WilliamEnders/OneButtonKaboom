@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9a3433311c13141ce89d0ab5210859bf
 timeCreated: 1445984449
+=======
+guid: 85e0c5e79eb204b34ad37767c255917b
+timeCreated: 1445983763
+>>>>>>> bba389dd9e661252c5bfcd3cfada369de58682bb
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -62,7 +67,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 1
+=======
+    globalScale: 100
+>>>>>>> bba389dd9e661252c5bfcd3cfada369de58682bb
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -95,10 +104,15 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
+<<<<<<< HEAD
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
+=======
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+>>>>>>> bba389dd9e661252c5bfcd3cfada369de58682bb
   additionalBone: 0
   userData: 
   assetBundleName: 
