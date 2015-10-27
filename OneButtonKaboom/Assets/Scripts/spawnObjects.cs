@@ -12,6 +12,7 @@ public class spawnObjects : MonoBehaviour {
 		for(int i = 0;i<spawnNum;i++){
 			GameObject justSpawned = Instantiate(spawnObj,transform.position,transform.rotation) as GameObject;
 			justSpawned.transform.parent = transform;
+			justSpawned.GetComponentInChildren<placeObject>().placeMe();
 
 		}
 	
