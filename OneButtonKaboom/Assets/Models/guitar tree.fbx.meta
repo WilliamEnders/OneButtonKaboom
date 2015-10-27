@@ -1,15 +1,43 @@
 fileFormatVersion: 2
-guid: 897ec5010d6ae4817bfdfe184eda5012
-timeCreated: 1445880888
+guid: 85f2e00b806e94d349668b6d072f1c1a
+timeCreated: 1445984975
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube4
+    100000: group14
+    100002: group15
+    100004: group16
+    100006: //RootNode
+    100008: pCube47
+    100010: pCube48
+    100012: pCube49
+    100014: pCube50
+    100016: polySurface1
+    400000: group14
+    400002: group15
+    400004: group16
+    400006: //RootNode
+    400008: pCube47
+    400010: pCube48
+    400012: pCube49
+    400014: pCube50
+    400016: polySurface1
+    2300000: pCube47
+    2300002: pCube48
+    2300004: pCube49
+    2300006: pCube50
+    2300008: polySurface1
+    3300000: pCube47
+    3300002: pCube48
+    3300004: pCube49
+    3300006: pCube50
+    3300008: polySurface1
+    4300000: polySurface1
+    4300002: pCube47
+    4300004: pCube48
+    4300006: pCube49
+    4300008: pCube50
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -67,10 +95,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
