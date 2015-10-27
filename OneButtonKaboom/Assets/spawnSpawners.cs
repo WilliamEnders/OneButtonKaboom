@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class spawnSpawners : MonoBehaviour {
-
+	public GameObject[] a;
 	public void Spawn(GameObject[] a){
 		for(int i = 0;i<a.Length;i++){
 			GameObject justSpawned = Instantiate(a[i],transform.position,transform.rotation) as GameObject;
@@ -11,7 +11,9 @@ public class spawnSpawners : MonoBehaviour {
 		}
 	}
 	// Update is called once per frame
-	void Update () {
+	void Start () {
+
+		Spawn (a);
 	
 	}
 }
