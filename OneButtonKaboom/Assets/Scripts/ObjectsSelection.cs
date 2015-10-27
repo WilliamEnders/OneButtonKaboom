@@ -19,28 +19,27 @@ public class ObjectsSelection : MonoBehaviour {
 	private int[] items3;
 	private int[] items4;
 	private int[] selectedItems;
-	private GameObject[]spawningItems;
-	public GameObject[][] itemsTable;
+
 	public GameObject[] itemsTable1;
 	public GameObject[] itemsTable2;
 	public GameObject[] itemsTable3;
 	public GameObject[] itemsTable4;
-	private const int itemsMaxNum =  4;
-	private const int selectedItemsMaxNum = 4;
-	
+
+	private GameObject[][] itemsTable;
+
 	private void init(){
-		items1 = new int[]{1,2,3,4};
-		items2 = new int[]{5,6,7,8};
-		items3 = new int[]{9,10,11,12};
-		items4 = new int[]{13,14,15,16};
+		items1 = new int[]{1,1,1,1};
+		items2 = new int[]{2,2,2,2};
+		items3 = new int[]{3,3,3,3};
+		items4 = new int[]{4,4,4,4};
 		
 		selectedItems = new int[]{0,0,0,0};
 
-		itemsTable = new GameObject[4] [4];
+		itemsTable [1] = itemsTable1;
+		itemsTable [2] = itemsTable2;
+		itemsTable [3] = itemsTable3;
+		itemsTable [4] = itemsTable4;
 
-		for(int i =1; i <4; i++){
-			itemsTable[i-1]=this["itemsTable"+i];
-		}
 	}
 	private void select(int _t, int _c){
 		selectedItems [_c] = _t;
@@ -56,7 +55,8 @@ public class ObjectsSelection : MonoBehaviour {
 		}
 	}
 	private void send(GameObject[] a){
-		
+		spawnSpawners target = (spawnSpawners) GameObject.Find("Planet").GetComponent(typeof(spawnSpawners));
+		target.Spawn (a);
 	}
 	
 	
