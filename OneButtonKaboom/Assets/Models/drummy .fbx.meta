@@ -9,10 +9,12 @@ ModelImporter:
     100002: pCylinder51
     100004: pCylinder52
     100006: pCylinder53
+    100008: group18
     400000: //RootNode
     400002: pCylinder51
     400004: pCylinder52
     400006: pCylinder53
+    400008: group18
     2300000: pCylinder51
     2300002: pCylinder52
     2300004: pCylinder53
