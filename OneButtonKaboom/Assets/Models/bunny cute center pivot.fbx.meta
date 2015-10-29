@@ -10,11 +10,13 @@ ModelImporter:
     100004: group9
     100006: pCylinder43
     100008: pSphere13
+    100010: group11
     400000: //RootNode
     400002: group10
     400004: group9
     400006: pCylinder43
     400008: pSphere13
+    400010: group11
     2300000: pCylinder43
     2300002: pSphere13
     3300000: pCylinder43
@@ -78,10 +80,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
