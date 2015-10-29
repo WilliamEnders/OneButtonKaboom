@@ -1,15 +1,24 @@
 fileFormatVersion: 2
-guid: 9ddb8fd1953ff475784a8df3b88486a6
-timeCreated: 1445983293
+guid: 84d2abd2302fd406084e02cf4a3402d5
+timeCreated: 1446152886
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: pCylinder56
+    100004: pCylinder57
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCylinder3
+    400002: pCylinder56
+    400004: pCylinder57
+    2300000: pCylinder56
+    2300002: pCylinder57
+    3300000: pCylinder56
+    3300002: pCylinder57
+    4300000: pCylinder57
+    4300002: pCylinder56
+    7400000: Take 001
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,7 +77,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
