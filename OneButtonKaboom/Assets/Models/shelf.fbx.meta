@@ -1,23 +1,37 @@
 fileFormatVersion: 2
-guid: 742850d09cfc54b75aad043dfb6b4469
-timeCreated: 1446153120
+guid: 43b262b00f36448cdacddc4788ee351e
+timeCreated: 1446172630
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCylinder56
-    100004: pCylinder57
-    400000: //RootNode
-    400002: pCylinder56
-    400004: pCylinder57
-    2300000: pCylinder56
-    2300002: pCylinder57
-    3300000: pCylinder56
-    3300002: pCylinder57
-    4300000: pCylinder57
-    4300002: pCylinder56
-    7400000: Take 001
+    100000: pCube1
+    100002: pCylinder1
+    100004: pCylinder3
+    100006: pCylinder4
+    100008: pCylinder5
+    100010: //RootNode
+    400000: pCube1
+    400002: pCylinder1
+    400004: pCylinder3
+    400006: pCylinder4
+    400008: pCylinder5
+    400010: //RootNode
+    2300000: pCube1
+    2300002: pCylinder1
+    2300004: pCylinder3
+    2300006: pCylinder4
+    2300008: pCylinder5
+    3300000: pCube1
+    3300002: pCylinder1
+    3300004: pCylinder3
+    3300006: pCylinder4
+    3300008: pCylinder5
+    4300000: pCube1
+    4300002: pCylinder1
+    4300004: pCylinder3
+    4300006: pCylinder4
+    4300008: pCylinder5
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -75,10 +89,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -4,8 +4,6 @@ using System.Collections;
 public class planetSizer : MonoBehaviour {
 
 	public float radius;
-	public float spinSpeedY;
-	public float spinSpeedX;
 
 	// Use this for initialization
 	void Start () {
@@ -16,8 +14,6 @@ public class planetSizer : MonoBehaviour {
 
 	void Update(){
 		transform.localScale = new Vector3 (radius, radius, radius);
-
-		transform.Rotate (new Vector3(0,spinSpeedY,spinSpeedX));
 	}
 
 }
