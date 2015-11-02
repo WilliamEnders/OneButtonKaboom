@@ -10,50 +10,52 @@ public class ObjectsSelection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
-	public GameObject PumpkinSpawner;
-
-	private int[] items1;
-	private int[] items2;
-	private int[] items3;
-	private int[] items4;
-	private int[] selectedItems;
-
 	public GameObject[] itemsTable1;
 	public GameObject[] itemsTable2;
 	public GameObject[] itemsTable3;
 	public GameObject[] itemsTable4;
 
-	private GameObject[][] itemsTable;
-
+	private int[] selectedType;
+	private item[] selectedItems;
+	private GameObject[]selectedSpawner;
+	//
+	//
+	//
+	public void kaboom(){
+		if (selectedType [0] * selectedType [1] * selectedType [2] * selectedType [3] != 0) {
+			send (selectedSpawner);
+		}
+	}
+	public void select(int _t, int _c, item _o){
+		selectedItems [_t-1] = _o;
+		if (_t == 1) {
+			selectedSpawner [_t - 1] = itemsTable1 [_c-1];
+		} else if (_t == 2) {
+			selectedSpawner [_t - 1] = itemsTable2 [_c-1];
+		} else if (_t == 3) {
+			selectedSpawner [_t - 1] = itemsTable3 [_c-1];
+		} else {
+			selectedSpawner [_t - 1] = itemsTable4 [_c-1];
+		}
+		selectedType [_t-1] = 1;
+	}
+	public bool hasType(int _t){
+		return selectedType [_t-1] == 1;
+	}
+	public item getItemByType(int _t){
+		return selectedItems [_t-1];
+	}
+	//
+	//
+	//
 	private void init(){
-		items1 = new int[]{1,1,1,1};
-		items2 = new int[]{2,2,2,2};
-		items3 = new int[]{3,3,3,3};
-		items4 = new int[]{4,4,4,4};
-		
-		selectedItems = new int[]{0,0,0,0};
+		selectedType = new int[]{0,0,0,0};
+		selectedItems = new item[4];
+		selectedSpawner = new GameObject[4];
+	}
 
-		itemsTable [1] = itemsTable1;
-		itemsTable [2] = itemsTable2;
-		itemsTable [3] = itemsTable3;
-		itemsTable [4] = itemsTable4;
-
-	}
-	private void select(int _t, int _c){
-		selectedItems [_c] = _t;
-	}
-	private void selectEnd(){
-		if(System.Array.IndexOf(selectedItems,0)>=0){
-			kaboom ();
-		}
-	}
-	private void kaboom(){
-		foreach(int i in selectedItems){
-			send(itemsTable[selectedItems[i]]);
-		}
-	}
 	private void send(GameObject[] a){
 		spawnSpawners target = (spawnSpawners) GameObject.Find("Planet").GetComponent(typeof(spawnSpawners));
 		target.Spawn (a);
