@@ -12,6 +12,7 @@ public class testCameraMove : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.A)){
 			GetComponent<Animator>().Play("CameraMovement");
+			GameObject.Find("UNIVERSE").GetComponent<spinAround>().spinSpeedX =+ 4;
 
 		}
 	
