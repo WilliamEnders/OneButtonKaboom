@@ -20,6 +20,7 @@ public class ObjectsSelection : MonoBehaviour {
 	private int[] selectedType;
 	private item[] selectedItems;
 	private GameObject[]selectedSpawner;
+	private int ground;
 	//
 	//
 	//
@@ -35,6 +36,7 @@ public class ObjectsSelection : MonoBehaviour {
 		} else if (_t == 2) {
 			selectedSpawner [_t - 1] = itemsTable2 [_c-1];
 		} else if (_t == 3) {
+			ground = _c-1;
 			selectedSpawner [_t - 1] = itemsTable3 [_c-1];
 		} else {
 			selectedSpawner [_t - 1] = itemsTable4 [_c-1];
@@ -58,7 +60,7 @@ public class ObjectsSelection : MonoBehaviour {
 
 	private void send(GameObject[] a){
 		spawnSpawners target = (spawnSpawners) GameObject.Find("Planet").GetComponent(typeof(spawnSpawners));
-		target.Spawn (a);
+		target.Spawn (a,ground);
 	}
 	
 	

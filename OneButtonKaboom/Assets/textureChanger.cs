@@ -4,10 +4,11 @@ using System.Collections;
 public class textureChanger : MonoBehaviour {
 
 	public Material[] materials;
-	int currentMat = 0;
 
 	// Use this for initialization
 	void Start () {
+	}
+	public void changeTexture(int currentMat){
 		GetComponent<Renderer>().material = materials[currentMat];
 	}
 	
