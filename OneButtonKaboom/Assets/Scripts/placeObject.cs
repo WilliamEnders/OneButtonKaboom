@@ -9,7 +9,7 @@ public class placeObject : MonoBehaviour {
 	// Update is called once per frame
 	public void placeMe () {
 		planet = GameObject.FindGameObjectWithTag ("Planet").transform;
-		transform.position = new Vector3 (0,0+(planet.localScale.y / 2)+offEarth+(transform.localScale.y),0);
+		transform.position = new Vector3 (planet.position.x,planet.position.y+(planet.localScale.y / 2)+offEarth+(transform.localScale.y),planet.position.z);
 		transform.parent.gameObject.transform.rotation = Random.rotation;
 	}
 }
