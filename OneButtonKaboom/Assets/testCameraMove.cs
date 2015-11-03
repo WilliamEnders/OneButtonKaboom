@@ -3,6 +3,8 @@ using System.Collections;
 
 public class testCameraMove : MonoBehaviour {
 
+	private bool addspin = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,8 +14,12 @@ public class testCameraMove : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.A)){
 			GetComponent<Animator>().Play("CameraMovement");
-			GameObject.Find("UNIVERSE").GetComponent<spinAround>().spinSpeedX =+ 4;
+			addspin = true;
 
+		}
+
+		if (addspin){
+			GameObject.Find("UNIVERSE").GetComponent<spinAround>().spinSpeedX += 0.2f;
 		}
 	
 	}
