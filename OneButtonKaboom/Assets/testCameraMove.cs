@@ -3,7 +3,7 @@ using System.Collections;
 
 public class testCameraMove : MonoBehaviour {
 
-	private bool addspin = false;
+	public bool addspin = false;
 	private Vector3 cp;
 
 	// Use this for initialization
@@ -16,13 +16,6 @@ public class testCameraMove : MonoBehaviour {
 	void Update () {
 		if (GameObject.Find ("selector").GetComponent<ObjectsSelection> ().ready) {
 			transform.position = new Vector3 (Random.Range(-3, 3)/400f+cp.x, Random.Range (-3, 3)/400f+cp.y, cp.z);
-			Debug.Log(transform.position);
-		}
-		if(Input.GetKey(KeyCode.A)){
-			GetComponent<Animator> ().enabled = true;
-			GetComponent<Animator>().Play("CameraMovement");
-			addspin = true;
-
 		}
 
 		if (addspin){
