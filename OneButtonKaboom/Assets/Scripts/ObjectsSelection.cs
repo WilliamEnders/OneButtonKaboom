@@ -25,6 +25,7 @@ public class ObjectsSelection : MonoBehaviour {
 	private int ground;
 	public bool ready = false;
 	private bool pumpkin = false; 
+	private bool pine = false;
 	//
 	//
 	//
@@ -39,6 +40,7 @@ public class ObjectsSelection : MonoBehaviour {
 			selectedSpawner [_t - 1] = itemsTable1 [_c-1];
 		} else if (_t == 2) {
 			pumpkin=(_c==4);
+			pine=(_c==1);
 			selectedSpawner [_t - 1] = itemsTable2 [_c-1];
 		} else if (_t == 3) {
 			ground = _c-1;
@@ -82,6 +84,9 @@ public class ObjectsSelection : MonoBehaviour {
 		target.Spawn (a,ground);
 		if (pumpkin) {
 			target.SpawnObj (itemsTable2 [4]);
+		}
+		if (pine) {
+			target.SpawnObj (itemsTable2 [5]);
 		}
 	}
 	
