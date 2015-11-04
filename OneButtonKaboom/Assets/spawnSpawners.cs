@@ -8,9 +8,14 @@ public class spawnSpawners : MonoBehaviour {
 			GameObject justSpawned = Instantiate(a[i],transform.position,transform.rotation) as GameObject;
 			justSpawned.transform.parent = transform;
 		}
+		//Debug.Log (ground);
 		gameObject.GetComponent<textureChanger> ().changeTexture (ground);
 
 	}	
+	public void SpawnObj(GameObject a){
+		GameObject justSpawned = Instantiate (a, transform.position, transform.rotation) as GameObject;
+		justSpawned.transform.parent = transform;
+	}
 
 	// Update is called once per frame
 	void Start () {
