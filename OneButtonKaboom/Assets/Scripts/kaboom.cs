@@ -4,6 +4,7 @@ using System.Collections;
 public class kaboom : MonoBehaviour {
 
 	private Transform camera;
+	private Transform mousebutton;
 	private MeshRenderer wall;
 	private int time;
 	private bool ready;
@@ -11,6 +12,7 @@ public class kaboom : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		camera = GameObject.Find ("Main Camera").transform;
+		mousebutton = GameObject.Find ("mouse-01").transform;
 		wall = GameObject.Find ("WALL").GetComponent<MeshRenderer>();
 		time = 0;
 		ready = false;
@@ -35,6 +37,7 @@ public class kaboom : MonoBehaviour {
 		if (GameObject.Find ("selector").GetComponent<ObjectsSelection> ().ready) {
 			Debug.Log ("k");
 			GameObject.Find ("selector").GetComponent<ObjectsSelection> ().kaboom ();
+			mousebutton.gameObject.SetActive(false);
 			camera.GetComponent<Animator> ().enabled = true;
 			camera.GetComponent<Animator> ().Play ("CameraMovement");
 			camera.GetComponent<testCameraMove> ().addspin = true;

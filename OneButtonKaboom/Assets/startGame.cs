@@ -19,4 +19,8 @@ public class startGame : MonoBehaviour {
 		Application.LoadLevel("Credits");
 		
 	}
+
+	public void startAnimation(){
+		GetComponent<Animator> ().Play ("awake");
+	}
 }
