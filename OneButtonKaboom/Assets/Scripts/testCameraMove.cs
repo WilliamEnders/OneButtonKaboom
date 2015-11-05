@@ -22,6 +22,12 @@ public class testCameraMove : MonoBehaviour {
 			GameObject.Find("UNIVERSE").GetComponent<spinAround>().spinSpeedX += 0.2f;
 			GameObject.Find ("UNIVERSE").GetComponent<Light> ().intensity -= 0.08f;
 		}
+
+		if(Input.GetKey(KeyCode.A)){
+
+			Application.LoadLevel("Game");
+
+		}
 	
 	}
 }
